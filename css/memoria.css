@@ -1,0 +1,119 @@
+/*Estilização Jogo da Memória*/
+
+.card {
+    width: 130px;
+    height: 120px;
+    padding-left: auto;
+    position: relative;
+    display: inline-block;
+    perspective: 600px;
+}
+
+.face {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border-radius: 10px;
+    transition: all 1s;
+    backface-visibility: hidden;
+}
+
+.back {
+    background: url("../img/jogoMemoria/20.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%100%;
+}
+
+.back.flipped {
+    transform: rotateY(180deg);
+}
+
+.front {
+    transform: rotateY(-180deg);
+}
+
+.front.flipped {
+    transform: rotateY(0deg);
+}
+
+.card:hover {
+     box-shadow: 0 0 10px darkgreen;
+     border-radius: 10px;
+}
+
+
+
+#pontos{
+    margin-top: 7px;
+	font-size: 25px;
+    float: right;
+    
+    
+}
+
+
+.button_game {
+    background: -moz-linear-gradient(center top , #EDEDED 5%, #DFDFDF 100%) repeat scroll 0 0 #EDEDED;
+    border: 1px solid #DCDCDC;
+    border-radius: 6px 6px 6px 6px;
+    box-shadow: 0 1px 0 0 #FFFFFF inset;
+    color: blue;
+    display: inline-block;
+    font-family: arial;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 6px 24px;
+    text-decoration: none;
+    text-shadow: 1px 1px 0 #FFFFFF;
+}
+
+.button_game:hover {
+    background: -moz-linear-gradient(center top , #DFDFDF 5%, #EDEDED 100%) repeat scroll 0 0 #DFDFDF;
+}
+
+.button_game:active {
+    position: relative;
+    top: 1px;
+}
+
+.OlindaCraft-jogos {
+    background-color: yellow;
+}
+
+/*Fim estilização Jogo da Memória*/
+
+
+@media(max-width: 720px) {
+
+    #pontos{
+    margin-top: 7px;
+	font-size: 15px;
+    float: right;
+    
+    }
+
+    .card {
+    width: 65px;
+    height: 65px;
+    padding-left: auto;
+    position: relative;
+    display: inline-block;
+    perspective: 600px;
+   }
+      
+
+}
+
+@media screen and (max-width:320px) {
+
+     .card {
+    width: 40px;
+    height: 40px;
+    padding-left: auto;
+    position: relative;
+    display: inline-block;
+    perspective: 600px;
+   }
+
+ }
+      

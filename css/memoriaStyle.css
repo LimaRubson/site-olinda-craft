@@ -1,0 +1,979 @@
+/*Animação*/
+* {
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+/*Animação*/
+i {
+  -webkit-transition: none!important;
+  -moz-transition: none!important;
+  transition: none!important;
+}
+/*Altura e Largura do html e body*/
+html, body {
+  height: 100%;
+  width: 100%;
+}
+/*Estilo da fonte*/
+body {
+  font-family: 'Arial', 'Helvetica', 'Catamaran', 'sans-serif';
+}
+/*Cor da Âncora*/
+a {
+  color: #FFEB32;
+}
+/*Animação da Âncora*/
+a:hover,
+a:focus {
+  color: #008000;
+}
+/*Estilo dos títulos e sua família*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Helvetica', 'Arial', 'sans-serif';
+  font-weight: 150;
+  letter-spacing: 1px;
+  color: green;
+}
+/*Estilo dos parágrafos*/
+p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+/*Estilo da tag navegação*/
+.navbar-default {
+  background-image: url('../img/fundo/MineCraftFundo.png') ;
+  border-color: rgba(34, 34, 34, 0.1);
+  padding: 15px 0;
+  -webkit-box-shadow: 0px 1px 11px 3px rgba(0,0,0,0);
+  -moz-box-shadow: 0px 1px 11px 3px rgba(0,0,0,0);
+  box-shadow: 0px 1px 11px 3px rgba(0,0,0,0);
+}
+.navbar-default.affix {
+  background-image: url('../img/fundo/MineCraftFundo.png') ;
+  border-color: rgba(34, 34, 34, 0.1);
+  -webkit-box-shadow: 0px 1px 11px 3px rgba(0,0,0,0.5);
+  -moz-box-shadow: 0px 1px 11px 3px rgba(0,0,0,0.5);
+  box-shadow: 0px 1px 11px 3px rgba(0,0,0,0.5);
+}
+.navbar-default .navbar-header .navbar-brand {
+  width:6em;
+  height:3.5em;
+  background-image: url('../img/logos/LogoOlindaCraft1.png');
+  background-repeat: no-repeat;
+  margin: 5px 20px 5px 10px;
+}
+.navbar-default .navbar-header .navbar-toggle {
+  font-size: 12px;
+  color: yellow;
+  padding: 8px 10px;
+}
+.navbar-header button {
+  margin: 11px 15px 5px 0;
+}
+.navbar-default .nav > li > a {
+  font-family:  "Minecraft Regular", 'Catamaran', 'Helvetica', 'Arial', 'sans-serif';
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 11px;
+}
+.navbar-default .nav > li > a,
+.navbar-default .nav > li > a:focus {
+  color: #fff;
+  border-radius: 7px;
+}
+.navbar-default .nav > li > a:hover,
+.navbar-default .nav > li > a:focus:hover {
+  background-color: #006400;
+  color: #FFFF00;
+}
+button.btn-default{
+     background: transparent;
+  }
+
+ button#voltar{
+    color: yellow;
+  }
+
+button#control {
+    color: green;
+}
+
+.btn-default:hover,
+ .btn-default:focus:hover{
+   background-color: #006400;
+   color: #FFFF00;
+  }
+  .btn.game:before {
+    font-family:  "Minecraft Regular", 'Catamaran', 'Helvetica', 'Arial', 'sans-serif';
+    content: "DOWNLOAD!"
+  }
+  .btn.desativado:hover {
+    cursor: not-allowed;
+    background-color: rgba(0, 0.4, 0);
+    border-color: rgba(0, 0.4, 0);
+  }
+  .btn.desativado:hover:before {
+    font-family:  "Minecraft Regular", 'Catamaran', 'Helvetica', 'Arial', 'sans-serif';
+    content: "EM BREVE..."
+  }
+.navbar-default .nav > li.active > a,
+.navbar-default .nav > li.active > a:focus {
+  color: #ffcc00 !important;
+  background-color: transparent;
+}
+.navbar-default .nav > li.active > a:hover,
+.navbar-default .nav > li.active > a:focus:hover {
+  background-color: transparent;
+}
+/*Fim da estilização da tag de navegação*/
+/*Media queries - responsividade em ação*/
+@media (min-width: 768px) {
+  .navbar-default {
+    background-image: url('../img/fundo/MineCraftFundo.png') ;
+    border-color: rgba(34, 34, 34, 0.1);
+    padding: 15px 0;
+    -webkit-box-shadow: 0px 1px 11px 3px rgba(0,0,0,0);
+    -moz-box-shadow: 0px 1px 11px 3px rgba(0,0,0,0);
+    box-shadow: 0px 1px 11px 3px rgba(0,0,0,0);
+  }
+  .navbar-default .navbar-header .navbar-brand {
+    background-image: url('../img/logos/LogoOlindaCraft1.png');
+    transform: scale(1.2,1.2);
+  }
+  .navbar-default .navbar-header .navbar-brand:hover,
+  .navbar-default .navbar-header .navbar-brand:focus {
+    background-image: url('../img/logos/LogoOlindaCraft1.png');
+  }
+  .navbar-default .nav > li > a,
+  .navbar-default .nav > li > a:focus {
+    color: #FFEB32;
+    margin-top: 5px;
+    font-size: 14px;
+  }
+  .navbar-default .nav > li > a:hover,
+  .navbar-default .nav > li > a:focus:hover {
+    background-color: #006400;
+    color: #FFFF00;
+  }
+
+.btn-default:hover,
+ .btn-default:focus:hover{
+    background-color: #006400;
+    color: #FFFF00;
+  }
+  .navbar-default.affix {
+    background-image: url('../img/fundo/MineCraftFundo.png') ;
+    border-color: rgba(34, 34, 34, 0.1);
+    -webkit-box-shadow: 0px 1px 11px 3px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0px 1px 11px 3px rgba(0,0,0,0.5);
+    box-shadow: 0px 1px 11px 3px rgba(0,0,0,0.5);
+  }
+  .navbar-default.affix .navbar-header .navbar-brand {
+    background-image: url('../img/logos/LogoOlindaCraft1.png');
+  }
+  .navbar-default.affix .navbar-header .navbar-brand:hover,
+  .navbar-default.affix .navbar-header .navbar-brand:focus {
+    background-image: url('../img/logos/LogoOlindaCraft1.png');
+  }
+  .navbar-default.affix .nav > li > a,
+  .navbar-default.affix .nav > li > a:focus {
+    color: #fff;
+  }
+  .navbar-default.affix .nav > li > a:hover,
+  .navbar-default.affix .nav > li > a:focus:hover {
+    color: #ffcc00;
+  }
+}
+/*Fim media query*/
+/*Carousel - activate carousel*/
+.carousel, .item, .active {
+    height: 100%;
+}
+.carousel-inner {
+    height: 100%;
+}
+.fill {
+    width: 100%;
+    height: 100%;
+}
+/* fade carousel */
+.carousel-fade .carousel-inner .item {
+  opacity: 0;
+  transition-property: opacity;
+}
+.carousel-fade .carousel-inner .active {
+  opacity: 1;
+}
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  left: 0;
+  opacity: 0;
+  z-index: 1;
+}
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+  opacity: 1;
+}
+.carousel-fade .carousel-control {
+  z-index: 2;
+}
+@media all and (transform-3d), (-webkit-transform-3d) {
+    .carousel-fade .carousel-inner > .item.next, .carousel-fade .carousel-inner > .item.active.right {
+      opacity: 0;
+      -webkit-transform: translate3d(0, 0, 0);
+              transform: translate3d(0, 0, 0);
+    }
+    .carousel-fade .carousel-inner > .item.prev,
+    .carousel-fade .carousel-inner > .item.active.left {
+      opacity: 0;
+      -webkit-transform: translate3d(0, 0, 0);
+              transform: translate3d(0, 0, 0);
+    }
+    .carousel-fade .carousel-inner > .item.next.left,
+    .carousel-fade .carousel-inner > .item.prev.right,
+    .carousel-fade .carousel-inner > .item.active {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 0, 0);
+              transform: translate3d(0, 0, 0);
+    }
+}
+/* fim fade carousel */
+.carousel-bg {
+  background-repeat: no-repeat!important;
+  background-attachment: fixed!important;
+  background-position: center center!important;
+  -webkit-background-size: cover!important;
+  -moz-background-size: cover!important;
+  background-size: cover!important;
+  -o-background-size: cover!important;
+}
+.olindacraft {
+  background: #0000FF url("../img/fundo/IgrejaCarmo.jpg");
+}
+.olindacraft2 {
+  background:  #0000FF url("../img/fundo/IgrejaSenhoraNeves.jpg");
+}
+.olindacraft3 {
+  background: #0000FF  url("../img/fundo/FarolOlinda.jpg") ;
+}
+.carousel-indicators{
+ z-index: 16;
+ position: absolute;
+ }
+ .carousel-indicators li{
+ width: 10px;
+ height: 10px;
+ margin-left: 22px;
+ margin-bottom: 3px;
+ background-color: rgba(255,255,255,0.65);
+ border: transparent;
+ border-radius: 100%;
+ }
+ .carousel-indicators li:first-child {
+   margin-left: 0;
+ }
+ .carousel-indicators .active {
+  width: 16px;
+  height: 16px;
+  margin-left: 22px;
+  background-color: #006400;
+  border: transparent;
+ }
+ /*Media-query - carousel*/
+@media (max-width:767px) {
+  .carousel-indicators{
+   display: table-cell;
+   vertical-align: middle;
+   float: none;
+   z-index: 16;
+   position: absolute;
+   bottom: 33%;
+   margin-left: 0!important;
+   width:0;
+   left:5%;
+   }
+   .carousel-indicators li{
+   display: block;
+   width: 12px;
+   height: 12px;
+   margin-bottom: 22px;
+   margin-left: 2px;
+   background-color: rgba(255,255,255,0.65);
+   border: transparent;
+   }
+   .carousel-indicators .active {
+    width: 16px;
+    height: 16px;
+    margin-bottom: 22px;
+    margin-left: 0;
+    background-color: #006400;
+    border: transparent;
+   }
+}
+/*Fim media query - carousel*/
+@media (max-width: 720px) {
+  section#jogo h6{
+  font-size: 7px;
+}
+}
+/*Estilização do header*/
+header .header-content {
+  text-align: center;
+  padding: 150px 0 50px;
+  position: relative;
+}
+header .header-content .header-content-inner {
+  position: relative;
+  max-width: 500px;
+  margin: 0 auto;
+}
+header .header-content .header-content-inner h1 {
+  margin-top: 0;
+  margin-bottom: 30px;
+  font-size: 30px;
+  color: yellow;
+}
+header .device-container {
+  max-width: 300px;
+  margin: 0 auto 100px;
+}
+header .device-container .screen img {
+  border-radius: 3px;
+}
+/*Fim estilização do header*/
+/*media query - header*/
+@media (min-width: 768px) {
+  header {
+    min-height: 100%;
+  }
+  header .header-content {
+    text-align: left;
+    padding: 0;
+    height: 100vh;
+  }
+  header img {
+      margin-top: 30%!important;
+      max-height: 560px;
+  }
+  header .header-content .header-content-inner {
+    max-width: none;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  header .header-content .header-content-inner h1 {
+    font-size: 30px;
+    color:yellow;
+  }
+}
+@media (min-width: 992px) {
+
+  header .header-content .header-content-inner h1 {
+    font-size: 50px;
+  }
+  header img {
+      margin-top: 20%!important;
+  }
+}
+@media (max-width: 991px) {
+	.carousel-caption p,
+	#jogoCarousel .list-group {
+    display:none;
+    }
+}
+/*Fim media query - header*/
+section {
+  padding: 100px 0;
+}
+section h2.section-heading {
+  font-size: 40px;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+section h3.section-subheading {
+  font-size: 16px;
+  font-family: "Minecraft Regular", 'Droid Serif', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif';
+  text-transform: none;
+  font-style: italic;
+  font-weight: 400;
+  margin-bottom: 75px;
+}
+@media (min-width: 768px) {
+  section {
+    padding: 150px 0;
+  }
+}
+.service-heading {
+  margin: 15px 0;
+  text-transform: none;
+}
+.timeline {
+  list-style: none;
+  padding: 0;
+  position: relative;
+}
+.timeline:before {
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  content: "";
+  width: 2px;
+  background-color: #f1f1f1;
+  left: 40px;
+  margin-left: -1.5px;
+}
+.timeline > li {
+  margin-bottom: 50px;
+  position: relative;
+  min-height: 50px;
+}
+.timeline > li:before,
+.timeline > li:after {
+  content: " ";
+  display: table;
+}
+.timeline > li:after {
+  clear: both;
+}
+.timeline > li .timeline-panel {
+  width: 100%;
+  float: right;
+  padding: 0 20px 0 100px;
+  position: relative;
+  text-align: left;
+}
+.timeline > li .timeline-panel:before {
+  border-left-width: 0;
+  border-right-width: 15px;
+  left: -15px;
+  right: auto;
+}
+.timeline > li .timeline-panel:after {
+  border-left-width: 0;
+  border-right-width: 14px;
+  left: -14px;
+  right: auto;
+}
+.timeline > li .timeline-image {
+  left: 0;
+  margin-left: 0;
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  z-index: 100;
+  background-color: #fed136;
+  color: blue;
+  border-radius: 100%;
+  border: 7px solid #f1f1f1;
+  text-align: center;
+}
+.timeline > li .timeline-image h4 {
+  font-size: 10px;
+  margin-top: 12px;
+  line-height: 14px;
+}
+.timeline > li.timeline-inverted > .timeline-panel {
+  float: right;
+  text-align: left;
+  padding: 0 20px 0 100px;
+}
+.timeline > li.timeline-inverted > .timeline-panel:before {
+  border-left-width: 0;
+  border-right-width: 15px;
+  left: -15px;
+  right: auto;
+}
+.timeline > li.timeline-inverted > .timeline-panel:after {
+  border-left-width: 0;
+  border-right-width: 14px;
+  left: -14px;
+  right: auto;
+}
+.timeline > li:last-child {
+  margin-bottom: 0;
+}
+.timeline .timeline-heading h4 {
+  margin-top: 0;
+  color: inherit;
+}
+.timeline .timeline-heading h4.subheading {
+  text-transform: none;
+}
+.timeline .timeline-body > p,
+.timeline .timeline-body > ul {
+  margin-bottom: 0;
+}
+@media (min-width: 768px) {
+  .timeline:before {
+    left: 50%;
+  }
+  .timeline > li {
+    margin-bottom: 100px;
+    min-height: 100px;
+  }
+  .timeline > li .timeline-panel {
+    width: 41%;
+    float: left;
+    padding: 0 20px 20px 30px;
+    text-align: right;
+  }
+  .timeline > li .timeline-image {
+    width: 100px;
+    height: 100px;
+    left: 50%;
+    margin-left: -50px;
+  }
+  .timeline > li .timeline-image h4 {
+    font-size: 13px;
+    margin-top: 16px;
+    line-height: 18px;
+  }
+  .timeline > li.timeline-inverted > .timeline-panel {
+    float: right;
+    text-align: left;
+    padding: 0 30px 20px 20px;
+  }
+}
+@media (min-width: 992px) {
+  .timeline > li {
+    min-height: 150px;
+  }
+  .timeline > li .timeline-panel {
+    padding: 0 20px 20px;
+  }
+  .timeline > li .timeline-image {
+    width: 150px;
+    height: 150px;
+    margin-left: -75px;
+  }
+  .timeline > li .timeline-image h4 {
+    font-size: 18px;
+    margin-top: 30px;
+    line-height: 26px;
+  }
+  .timeline > li.timeline-inverted > .timeline-panel {
+    padding: 0 20px 20px;
+  }
+}
+@media (min-width: 1200px) {
+  section#jogo h6 {
+  font-size: 20px;
+ }
+  .timeline > li {
+    min-height: 170px;
+  }
+  .timeline > li .timeline-panel {
+    padding: 0 20px 20px 100px;
+  }
+  .timeline > li .timeline-image {
+    width: 170px;
+    height: 170px;
+    margin-left: -85px;
+  }
+  .timeline > li .timeline-image h4 {
+    margin-top: 40px;
+  }
+  .timeline > li.timeline-inverted > .timeline-panel {
+    padding: 0 100px 20px 20px;
+  }
+}
+header#MineCraftCarousel img.size-image {
+  height: 100%;
+  width: 100%;
+  padding-top: 50px;
+}
+header#MineCraftCarousel div.text-header {
+  font-size: 30px;
+  font-family: "Minecraft Regular", 'Arial', 'Helvetica', 'Catamaran', 'sans-serif';
+  color: #FFEB32;
+}
+#mapa {
+  /* The image used */
+    background: #0000FF url("../img/Sobre/PlanoFundo.png");
+  /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+section#mapa .section-heading,.section-subheading {
+  color:#ffff00;
+}
+section#mapa div.text-header {
+  font-size: 30px;
+  font-family: "Minecraft Regular", 'Arial', 'Helvetica', 'Catamaran', 'sans-serif';
+  color: #FFEB32;
+}
+#jogo {
+  /* The image used */
+    background: #0000FF url("../img/Jogo/FundoJogo.png");
+  /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#jogoCarousel .carousel-caption {
+    left:0;
+	  right:0;
+	  bottom:0;
+	  text-align:center;
+	  padding:10px;
+	  background:rgba(0,0,0,0.6);
+	  text-shadow:none;
+}
+.item .thumb {
+    width: 25%;
+	cursor: pointer;
+	float: left;
+}
+.item .thumb img {
+	width: 100%;
+	margin: 2px;
+}
+.item img {
+	width: 100%;
+}
+section#jogo h2.section-heading, .subheading-game, h3.section-subgame{
+  color: #ffffff;
+  text-align: center;
+}
+section#jogo div.slideGame {
+  padding:120px 0;
+}
+section#jogo p.text-game {
+  color: #ffffff;
+}
+section#jogo ul.tipo-lista {
+  list-style-type: none;
+}
+#about {
+  /* The image used */
+    background: #0000FF url("../img/Sobre/PlanoFundo.png");
+  /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+section#about h2.section-heading, .subheading {
+  color: #ffff00;
+  text-align: center;
+}
+section#about p.text-muted {
+  color: #ffffff;
+  /*font-family: "Minecraft Regular", 'Montserrat', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif';*/
+  /*text-align: center;*/
+}
+section#about img.img-circle{
+  height: 100%;
+  width: 100%;
+}
+#Video {
+ padding-top: 30px;
+}
+section#roteiro {
+  background-color: #008000;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+section#roteiro .section-heading, h3.section-subheading {
+  color: #ffff00;
+}
+section#roteiro .form-group {
+  margin-bottom: 25px;
+}
+section#roteiro .form-group input,
+section#roteiro .form-group textarea {
+  padding: 20px;
+}
+section#roteiro .form-group input.form-control {
+  height: auto;
+}
+section#roteiro .form-group textarea.form-control {
+  height: 236px;
+}
+section#roteiro .form-control:focus {
+  border-color: #fed136;
+  box-shadow: none;
+}
+section#roteiro ::-webkit-input-placeholder {
+  font-family: "Minecraft Regular", 'Montserrat', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif';
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #eeeeee;
+}
+section#roteiro :-moz-placeholder {
+  /* Firefox 18- */
+  font-family: "Minecraft Regular", 'Montserrat', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif';
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #eeeeee;
+}
+section#roteiro ::-moz-placeholder {
+  /* Firefox 19+ */
+  font-family: "Minecraft Regular", 'Montserrat', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif';
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #eeeeee;
+}
+section#roteiro :-ms-input-placeholder {
+  font-family: "Minecraft Regular", 'Montserrat', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif';
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #eeeeee;
+}
+section#roteiro .text-danger {
+  color: #e74c3c;
+}
+.btn-xl:hover,
+ .btn-xl:focus:hover{
+   background-color: #FFFF00;
+   color: #006400;
+  }
+.btn.aula:before {
+  font-family: "Minecraft Regular", 'Montserrat', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif';
+  content: "Enviar Roteiro"
+}
+.btn.roteiro:hover {
+  cursor: not-allowed;
+  background-color: rgba(0, 0.4, 0);
+  border-color: rgba(0, 0.4, 0);
+}
+.btn.roteiro:hover:before {
+  content: "EM BREVE..."
+}
+aside.partners img {
+  margin: 50px auto;
+}
+.partners {
+  background-color: #FFFFF0;
+  background-repeat: no-repeat;
+}
+aside.partners h1 {
+  color: #008000;
+}
+footer ul > li > a:hover, a:focus {
+  color: #0000ff;
+}
+footer {
+  padding: 5px 0;
+  text-align: center;
+  background-image: url('../img/fundo/MineCraftFundo.png');
+}
+footer span.copyright {
+  line-height: 5px;
+  font-family: "Minecraft Regular", 'Montserrat', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif';
+  text-transform: uppercase;
+  text-transform: none;
+  color: #FFEB32;
+}
+footer ul.quicklinks {
+  margin-bottom: 0;
+  line-height: 40px;
+  font-family: "Minecraft Regular", 'Montserrat', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif';
+  text-transform: uppercase;
+  text-transform: none;
+}
+.team-member {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.team-member img {
+  margin: 0 auto;
+  border: 7px solid white;
+}
+.team-member h4 {
+  margin-top: 25px;
+  margin-bottom: 0;
+  text-transform: none;
+}
+.team-member p {
+  margin-top: 0;
+}
+ul.social-buttons {
+  margin-bottom: 0;
+}
+ul.social-buttons li a {
+  display: block;
+  background-color: #222222;
+  height: 40px;
+  width: 40px;
+  border-radius: 100%;
+  font-size: 20px;
+  line-height: 40px;
+  color: white;
+  outline: none;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+}
+ul.social-buttons li a:hover,
+ul.social-buttons li a:focus,
+ul.social-buttons li a:active {
+  background-color: #fed136;
+}
+.btn:focus,
+.btn:active,
+.btn.active,
+.btn:active:focus {
+  outline: none;
+}
+::-moz-selection {
+  text-shadow: none;
+  background: #fed136;
+}
+::selection {
+  text-shadow: none;
+  background: #fed136;
+}
+img::selection {
+  background: transparent;
+}
+img::-moz-selection {
+  background: transparent;
+}
+body {
+  webkit-tap-highlight-color: #fed136;
+}
+#loader-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+}
+#loader {
+    display: block;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    width: 150px;
+    height: 150px;
+    margin: -75px 0 0 -75px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-top-color: #0000FF;
+
+    -webkit-animation: spin 2s linear infinite; /* Chrome, Opera 15+, Safari 5+ */
+    animation: spin 2s linear infinite; /* Chrome, Firefox 16+, IE 10+, Opera */
+
+    z-index: 1001;
+}
+#loader:before {
+        content: "";
+        position: absolute;
+        top: 5px;
+        left: 5px;
+        right: 5px;
+        bottom: 5px;
+        border-radius: 50%;
+        border: 3px solid transparent;
+        border-top-color: #FFFF00;
+
+        -webkit-animation: spin 3s linear infinite; /* Chrome, Opera 15+, Safari 5+ */
+        animation: spin 3s linear infinite; /* Chrome, Firefox 16+, IE 10+, Opera */
+  }
+  #loader:after {
+        content: "";
+        position: absolute;
+        top: 15px;
+        left: 15px;
+        right: 15px;
+        bottom: 15px;
+        border-radius: 50%;
+        border: 3px solid transparent;
+        border-top-color: brown;
+
+        -webkit-animation: spin 1.5s linear infinite; /* Chrome, Opera 15+, Safari 5+ */
+          animation: spin 1.5s linear infinite; /* Chrome, Firefox 16+, IE 10+, Opera */
+  }
+  @-webkit-keyframes spin {
+        0%   {
+            -webkit-transform: rotate(0deg);  /* Chrome, Opera 15+, Safari 3.1+ */
+            -ms-transform: rotate(0deg);  /* IE 9 */
+            transform: rotate(0deg);  /* Firefox 16+, IE 10+, Opera */
+        }
+        100% {
+            -webkit-transform: rotate(360deg);  /* Chrome, Opera 15+, Safari 3.1+ */
+            -ms-transform: rotate(360deg);  /* IE 9 */
+            transform: rotate(360deg);  /* Firefox 16+, IE 10+, Opera */
+        }
+  }
+  @keyframes spin {
+        0%   {
+            -webkit-transform: rotate(0deg);  /* Chrome, Opera 15+, Safari 3.1+ */
+            -ms-transform: rotate(0deg);  /* IE 9 */
+            transform: rotate(0deg);  /* Firefox 16+, IE 10+, Opera */
+        }
+        100% {
+            -webkit-transform: rotate(360deg);  /* Chrome, Opera 15+, Safari 3.1+ */
+            -ms-transform: rotate(360deg);  /* IE 9 */
+            transform: rotate(360deg);  /* Firefox 16+, IE 10+, Opera */
+        }
+  }
+  #loader-wrapper .loader-section {
+        position: fixed;
+        top: 0;
+        width: 51%;
+        height: 100%;
+        background: #006400	;
+        z-index: 1000;
+        -webkit-transform: translateX(0);  /* Chrome, Opera 15+, Safari 3.1+ */
+        -ms-transform: translateX(0);  /* IE 9 */
+        transform: translateX(0);  /* Firefox 16+, IE 10+, Opera */
+  }
+  #loader-wrapper .loader-section.section-left {
+        left: 0;
+  }
+  #loader-wrapper .loader-section.section-right {
+        right: 0;
+  }
+  /* Loaded */
+  .loaded #loader-wrapper .loader-section.section-left {
+        -webkit-transform: translateX(-100%);  /* Chrome, Opera 15+, Safari 3.1+ */
+            -ms-transform: translateX(-100%);  /* IE 9 */
+                transform: translateX(-100%);  /* Firefox 16+, IE 10+, Opera */
+
+        -webkit-transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+                transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+  }
+  .loaded #loader-wrapper .loader-section.section-right {
+        -webkit-transform: translateX(100%);  /* Chrome, Opera 15+, Safari 3.1+ */
+            -ms-transform: translateX(100%);  /* IE 9 */
+                transform: translateX(100%);  /* Firefox 16+, IE 10+, Opera */
+
+-webkit-transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+        transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+}
+.loaded #loader {
+        opacity: 0;
+        -webkit-transition: all 0.3s ease-out;
+                transition: all 0.3s ease-out;
+}
+.loaded #loader-wrapper {
+        visibility: hidden;
+
+        -webkit-transform: translateY(-100%);  /* Chrome, Opera 15+, Safari 3.1+ */
+            -ms-transform: translateY(-100%);  /* IE 9 */
+                transform: translateY(-100%);  /* Firefox 16+, IE 10+, Opera */
+
+        -webkit-transition: all 0.3s 1s ease-out;
+                transition: all 0.3s 1s ease-out;
+}
+    /* JavaScript Turned Off */
+.no-js #loader-wrapper {
+        display: none;
+}
+.navbar-fixed-top {
+    display: block;
+  }
